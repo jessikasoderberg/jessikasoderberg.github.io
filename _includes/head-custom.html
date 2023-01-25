@@ -9,9 +9,9 @@
 </script>
 
 <script>
-function sendReadEvent(title, numberOfCharacters) {
+function sendReadEvent(title, numberOfCharacters, author) {
     gtag('event', 'read_article', {
-        "author": "Jessika S",
+        "author": author,
         "title": title,
         "number_of_characters": numberOfCharacters,
     });
@@ -24,17 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (readArticle1Button) {
         // Skickar event vid klick på artikel 1
         readArticle1Button.addEventListener("click", () => {
-            sendReadEvent("Article 1", 50)
+            sendReadEvent("Article 1", 50, "Jessika S")
         });
 
         // Skickar event vid klick på artikel 2
         document.getElementById("read-article-2").addEventListener("click", () => {
-            sendReadEvent("Article 2", 100)
+            sendReadEvent("Article 2", 100, "Emma L")
         });
 
         // Skickar event vid klick på artikel 3
         document.getElementById("read-article-3").addEventListener("click", () => {
-            sendReadEvent("Article 3", 150)
+            sendReadEvent("Article 3", 150, "Julia S")
         });
     }
 
@@ -42,3 +42,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
  console.log("2023-01-23 2")
 </script>
+
+
