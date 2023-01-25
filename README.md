@@ -5,4 +5,4 @@
 
 [Thank you](/thank-you)
 
-<button id="purchase-button1">Purchase item</button>
+<button id="purchase-button1">[Purchase item](/purchase-complete)</button>
